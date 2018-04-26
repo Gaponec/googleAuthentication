@@ -1,0 +1,17 @@
+security:
+  oauth2:
+    client:
+      client-id:xxxxxxxxxxxxxxxxxx
+      client-secret: xxxxxxxxxxxxxxxxxxxxxx
+      access-token-uri: https://accounts.google.com/o/oauth2/token
+      user-authorization-uri: https://accounts.google.com/o/oauth2/auth
+      token-name: oauth_token
+      authentication-scheme: query
+      client-authentication-scheme: form
+      scope: profile email
+
+    resource:
+      user-info-uri: https://www.googleapis.com/userinfo/v2/me
+      prefer-token-info: false
+server:
+  port: 8080
